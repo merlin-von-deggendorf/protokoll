@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{cite}
+\usepackage{multirow}
+
 
 % Titel und Autor
 \title{RNA-Quantifizierung mittels qPCR}
@@ -174,6 +176,39 @@ Programm analysiert:
 \end{tabular}
 \caption{PCR-Zyklusprogramm}
 \end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Cycles} & \textbf{Step} & \textbf{Temp [°C]} & \textbf{Time [sec]} \\ \hline
+    1 & Preincubation & 95 & 120 \\ \hline
+    40 & 2 Step Amplification & 95 & 5 \\ \hline
+     &  & 65 & 30 \\ \hline
+    1 & High Resolution Melting & 95 & 60 \\ \hline
+     &  & 40 & 60 \\ \hline
+     &  & 65 & 1 \\ \hline
+     &  & 97 & 1 \\ \hline
+    1 & Cooling & 37 & 30 \\ \hline
+    \end{tabular}
+    \caption{PCR-Zyklusprogramm}
+    \end{table}
+    
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Header 1} & \multicolumn{2}{|c|}{\textbf{Header 2 and 3 Merged}} \\ \hline
+        Row 1, Col 1 & Row 1, Col 2 & Row 1, Col 3 \\ \hline
+        Row 2, Col 1 & Row 2, Col 2 & Row 2, Col 3 \\ \hline
+        \multirow{2}{*}{Merged Row} & Row 3, Col 2 & Row 3, Col 3 \\ \cline{2-3}
+         & Row 4, Col 2 & Row 4, Col 3 \\ \hline
+        Row 5, Col 1 & Row 5, Col 2 & Row 5, Col 3 \\ \hline
+        Row 6, Col 1 & Row 6, Col 2 & Row 6, Col 3 \\ \hline
+        \end{tabular}
+        \caption{Table with merged columns and rows}
+        \end{table}
 
 % Diskussion
 \section{Diskussion}
