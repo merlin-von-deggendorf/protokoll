@@ -71,8 +71,80 @@ werden sollen. In diesem Fall sind es die Gene GAPDH und Beta-Actin.
 \end{itemize}
 
 
+\section*{Durchführung}
 
-\section{Durchführung}
+\subsection*{Versuch 1: RNA-Isolation mittels Monarch\textsuperscript{\textregistered} Total RNA Miniprep Kit (NEB)}
+
+\textbf{Lysat erstellen:}
+Zunächst wurden die tiefgefrorenen Zellpellets der kultivierten Zellen aufgetaut, bei 4 °C für 2 Minuten bei 10.000 rpm zentrifugiert und durch Zugabe von 800 µl des Lysepuffers in Lysat überführt. Durch die Lyse wurden die Zellen aufgebrochen und der Zellinhalt für die weitere Prozessierung zugänglich gemacht.
+
+\textbf{gDNA entfernen:}
+Im nächsten Schritt wurde aus dem Lysat die genomische DNA (gDNA) durch Waschung über einer Removal Column entfernt. Hierfür wurden 800 µl Lysat in die gDNA Removal Column überführt und für 1 Minute bei 10.000 rpm und Raumtemperatur (RT) zentrifugiert.
+
+\textbf{RNA isolieren und Nebenprodukte entfernen:}
+Der flüssige Durchsatz wurde nach Entfernen und Entsorgung der gDNA Removal Column im Verhältnis 1:1 mit Ethanol (≥95\%) gemischt. Die Mischung wurde in mehreren Durchgängen in die RNA Purification Column überführt und für 1 Minute bei 10.000 rpm und RT zentrifugiert. Der Durchsatz wurde nach jedem Durchgang verworfen. Der Prozess wurde wiederholt, bis die Mischung einmal komplett durch die RNA Removal Column zentrifugiert wurde.
+
+\textbf{DNase 1 Behandlung:}
+Anschließend wurde die RNA Removal Column mit 500 µl RNA Wash Buffer benetzt und nochmals für 1 Minute zentrifugiert. Der Durchsatz wurde verworfen. Im nächsten Schritt wurde die RNA Removal Column in ein Tube überführt, das 75 µl DNase I Reaction Buffer enthält und die Matrix mit DNase I benetzt. Das Tube wurde 15 Minuten bei RT inkubiert. Danach wurden 500 µl Wash Buffer auf die Säule pipettiert, 1 Minute zentrifugiert und der Überstand verworfen.
+
+\textbf{Elution der RNA:}
+Es folgte eine Waschung mit 500 µl Priming Buffer und 1 Minute Zentrifugation. Nach Verwerfen des Überstands wurde nochmals mit 500 µl Wash Buffer auf die Säule pipettiert, 2 Minuten zentrifugiert und der Überstand entfernt. Die Säule wurde in ein nukleasefreies Tube überführt. Die Elution der RNA erfolgte, indem 50 µl nukleasefreies H\textsubscript{2}O auf die Matrix der Säule pipettiert und 1 Minute zentrifugiert wurde. Die genaue Vorgehensweise ist der Anleitung des Monarch\textsuperscript{\textregistered} Total RNA Miniprep Kit (NEB) zu entnehmen.
+
+\subsection*{Spektroskopie zur Bestimmung der Nukleinsäurenkonzentration}
+
+Dieser Abschnitt dient der Bewertung der Qualität der aufgereinigten RNA aus den Zellpellets. Hierfür wurde 1 µl der Probe vermessen. Ziel war es, das Verhältnis der Absorption bei den Wellenlängen 260/280 [nm] zu überprüfen. Der experimentelle Schwellwert für eine weiterverwendbare RNA-Konzentration in der Probe liegt bei ca. 20. Die Messung fand in einem Spektrophotometer DS-11+ von DeNovix statt. Benutzt wurde das RNA-Programm. Zunächst musste eine Blank-Messung durchgeführt werden, um dem Spektrophotometer einen Bezugsrahmen für folgende Messungen zu geben. Dies erfolgte durch die Messung von 1 µl nukleasefreiem H\textsubscript{2}O. Nach der Eichung des Referenzrahmens folgte die Messung der einzelnen Proben, stets mit 1 µl Probe auf der Mikrovolumenabsorptionseinheit, die nach jeder Messung mit der gleichen Menge nukleasefreiem H\textsubscript{2}O gereinigt wurde.
+
+\subsection*{Versuch 2: cDNA-Synthese aus isolierter RNA}
+
+\textbf{Mischen der Komponenten:}
+Für die RT-PCR wurde ein Reaktionsvolumen von 20 µl festgelegt. Die Komponenten wurden in ein 15 ml Eppendorf-Gefäß gefüllt und abzentrifugiert.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Komponenten} & \textbf{Volumen} \\ \hline
+Random Primer Mix & 2 µl \\ \hline
+10X M-MuLV RT Puffer & 2 µl \\ \hline
+10 mM dNTP & 1 µl \\ \hline
+RNAse Inhibitor (40 U/µl) & 0.2 µl \\ \hline
+M-MuLV Reverse Transkriptase (200 U/µl) & 1 µl \\ \hline
+RNA (5 µg) & Probenabhängige Konzentration \\ \hline
+Nukleasefreies H\textsubscript{2}O & Bis 20 µl auffüllen \\ \hline
+\end{tabular}
+\caption{Komponenten für die cDNA-Synthese}
+\end{table}
+
+\textbf{Inkubation:}
+Die Inkubation erfolgte im Heizblock TS pro – CellMedia in drei Schritten:
+\begin{itemize}
+    \item 5 Minuten bei 25 °C
+    \item 60 Minuten bei 42 °C
+    \item 20 Minuten bei 65 °C
+\end{itemize}
+
+\subsection*{Versuch 3: Quantifizierung durch qPCR (Real-Time PCR)}
+
+Zur Untersuchung von drei Primern wurde jeweils ein Master Mix mit 80 µl Reaktionsvolumen für eine Messung, eine Zweitmessung und eine NTC in 20 µl vorbereitet. Jeder Master Mix enthielt pro Reaktion (20 µl) 10 µl 2X Biozym HRM Mix, 0.4 µl 10 µM Primer forward, 0.4 µl 10 µM Primer reverse, 8.2 µl nukleasefreies H\textsubscript{2}O und 1 µl cDNA oder nukleasefreies H\textsubscript{2}O für die NTC. Die Master Mixe wurden in PCR-Tubes transferiert. Die cDNA und das alternative H\textsubscript{2}O wurden als letztes pipettiert. Anschließend wurden die PCR-Tubes verschlossen und auf Eis gelegt.
+
+Die Proben wurden in einem Roche Light Cycler 96 mit folgendem Programm analysiert:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Cycles} & \textbf{Step} & \textbf{Temp [°C]} & \textbf{Time [sec]} \\ \hline
+1 & Preincubation & 95 & 120 \\ \hline
+40 & 2 Step Amplification & 95 & 5 \\ \hline
+ &  & 65 & 30 \\ \hline
+1 & High Resolution Melting & 95 & 60 \\ \hline
+ &  & 40 & 60 \\ \hline
+ &  & 65 & 1 \\ \hline
+ &  & 97 & 1 \\ \hline
+1 & Cooling & 37 & 30 \\ \hline
+\end{tabular}
+\caption{PCR-Zyklusprogramm}
+\end{table}
 
 % Ergebnisse
 \section{Ergebnisse}
