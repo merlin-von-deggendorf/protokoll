@@ -1,0 +1,189 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title{Laborprotokoll: RNA-Isolation und Spektroskopie}
+\author{Technische Hochschule Deggendorf (THD) \\ Fakultät Angewandte Informatik \\ Dr. Stefan Fischer}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Einleitung}
+In dieser Laborübung wird die Isolation und Reinigung von RNA aus kultivierten humanen Zelllinien mittels des Monarch® Total RNA Miniprep Kits (NEB) durchgeführt. Anschließend wird die RNA-Konzentration mittels Spektroskopie bestimmt.
+
+\section*{Materialien}
+\begin{itemize}
+    \item Monarch Total RNA Miniprep Kit
+    \item Lyse Buffer (800 µl, aliquotiert)
+    \item gDNA Removal Column mit Sammelröhrchen
+    \item RNA Purification Column mit Sammelröhrchen
+    \item RNA Wash Buffer (aliquotiert)
+    \item DNase I (auf Eis, aliquotiert)
+    \item DNase I Reaction Buffer (75 µl, aliquotiert)
+    \item Priming Buffer (aliquotiert)
+    \item Nukleasefreies H$_2$O
+    \item Ethanol (\(\geq\) 95\%, 800 µl, aliquotiert)
+    \item Mikrozentrifugenröhrchen (1,5 ml, nukleasefrei)
+    \item Tischzentrifuge (MicroStar 17R – VWR)
+    \item Vortexer (Heathrow Scientific)
+    \item Pipetten (1-10 µl, 20-100 µl, 200-1000 µl)
+    \item Pipettenspitzen (1-10 µl, 20-100 µl, 200-1000 µl)
+    \item Mini-Tischzentrifuge (Heathrow Scientific – Biozym)
+    \item Rack und Box mit Eis
+\end{itemize}
+
+\section*{Vorbereitungen}
+\begin{itemize}
+    \item Tragen Sie immer Handschuhe.
+    \item Reinigen Sie Werkbank, Racks, Pipetten und Spitzenboxen mit 70\%igem Ethanol, um die Verunreinigung mit Nucleasen zu vermeiden.
+    \item Bereiten Sie Puffer, Vials/Tubes, Enzyme (auf Eis) und nukleasefreies H$_2$O vor.
+    \item Kühlen Sie die Tischzentrifuge auf 4 °C.
+\end{itemize}
+
+\section*{Durchführung}
+
+\subsection*{Teil 1: RNA-Isolation aus kultivierten humanen Zelllinien}
+
+Die RNA wird aus kultivierten humanen Zelllinien isoliert. Das Ausgangsmaterial ist ein Zellpellet, am Ende des Schrittes haben wir eine RNA-Probe in nukleasefreiem H$_2$O, die für weitere Analysen verwendet werden kann.
+
+\subsubsection*{Probenaufschluss und Homogenisierung}
+\begin{enumerate}
+    \item Zellpellet auf Eis auftauen.
+    \item Zellen bei 4°C für 2 Minuten und 10.000 rpm abzentrifugieren.
+    \item Überstand vorsichtig abnehmen, ohne das Pellet zu beschädigen.
+    \item Pellet in 800 µl Lysepuffer resuspendieren und sanft pipettieren, um Aufschäumen zu vermeiden. Probe bei Raumtemperatur weiterbearbeiten. Durch den Lysepuffer wird die RNA stabilisiert und die Zellmembranen werden lysiert und die Proteine denaturiert.
+\end{enumerate}
+
+\subsubsection*{RNA-Bindung und Elution}
+
+\begin{enumerate}
+    \item 800 µl Lysat in die gDNA Removal Column (hellblau) überführen und abzentrifugieren (1 min, 10.000 rpm, RT). Das gDNA Removal Column besteht aus einer speziellen Matrix, die DNA bindet und RNA durchlässt.
+    \item gDNA Removal Column entsorgen und den Durchsatz in eine neue RNA Purification Column (dunkelblau) überführen. Die RNA Purification Column enthält eine spezielle Matrix aus Silika, die RNA bindet.
+    \item Gleiche Volumen Ethanol (\(\geq\) 95\%) zum Durchsatz hinzufügen und mischen. Durch das Ethanol wird die Matrix aktiviert und die RNA bindet besser an die Matrix. Auserdem wird die Konzentration der RNA pro Volumen reduziert, was die Bindung an die Matrix verbessert.
+    \item Zentrifugieren (1 min, 10.000 rpm, RT). Im Durchsatz verbleiben die Proteine und andere Verunreinigungen, während die RNA an die Matrix bindet. Der Durchsatz wird verworfen.
+    \item 500 µl RNA Wash Buffer auf die Säule geben und 1 min zentrifugieren. Der RNA Wash Buffer entfernt Verunreinigungen und Salze von der Matrix, ohne die RNA zu beeinträchtigen, der Durchsatz wird verworfen.
+    \item 5 µl DNase I in 75 µl DNase I Reaction Buffer pipettieren, kurz vortexen und auf die Säulenmatrix pipettieren. 15 min bei RT inkubieren. Die DNase I entfernt DNA-Verunreinigungen von der Matrix. Der Reaktionspuffer stabilisiert die DNase I und erhöht die Effizienz der DNase I.
+    \item Säule mit RNA Wash Buffer (2x 500 µl) waschen und jeweils 1 min zentrifugieren. Durchsatz verwerfen. Der RNA Wash Buffer entfernt die Restlichen Verunreinigungen und Salze von der Matrix, ohne die RNA zu beeinträchtigen.
+    \item Elution: Säule in ein nukleasefreies 1,5 ml Röhrchen überführen und 50 µl nukleasefreies H$_2$O auf die Säule pipettieren. 1 min zentrifugieren. Die RNA wird von der Matrix in das nukleasefreie H$_2$O eluiert.
+    \item Die in H$_2$O eluierte RNA auf Eis lagern oder bei -20°C (kurzfristig) bzw. -80°C (langfristig) aufbewahren.
+\end{enumerate}
+
+\subsection*{Teil 2: Spektroskopie - Bestimmung der Nukleinsäurekonzentration}
+
+\subsubsection*{Material}
+
+\begin{itemize}
+    \item Nukleasefreies H\textsubscript{2}O
+    \item Tischzentrifuge MicroStar 17R – VWR
+    \item Spektrophotometer DS-11+ - DeNovix
+    \item Pipetten 1-10 µl
+    \item Pipettenspitzen 1-10 µl
+    \item Präzisionswischtücher Kimtech Science
+\end{itemize}
+
+\subsubsection*{Durchführung}
+
+Für die spektrophotometrische Analyse der isolierten Nukleinsäuren kann es erforderlich sein, die eluierte Probe erneut zu zentrifugieren und ein Aliquot aus der oberen Schicht der Flüssigkeit zu entnehmen. Dabei wird sichergestellt, dass die Messung bei A260/230 nicht durch eine Kontamination von z.B. Silica-Partikeln beeinträchtigt wird.
+
+\begin{enumerate}
+    \item Spektrophotometer einschalten und warten, bis die Startphase beendet ist.
+    \begin{itemize}
+        \item WICHTIG: Deckel nicht öffnen!
+    \end{itemize}
+    \item RNA-Programm auswählen.
+    \item Für die Messung die Microvolumenabsorption verwenden.
+    \begin{itemize}
+        \item WICHTIG: Die Oberfläche der Mikrovolumens-Absorptionseinheit nicht mit der Pipettenspitze berühren.
+        \item Leerwert (Blank) mit 1 µl Elutionsmittel (nuklease-freies H\textsubscript{2}O) messen. Den Deckel langsam schließen. Reinigung der Oberfläche mit einem Spezialtuch. Die Blank-Messung wird für die Korrektur der Probe benötigt. Da das Elutionsmittel spezifische Absorptionswerte hat, wird es als Referenzwert verwendet, welche von der Probe abgezogen werden, dadurch wird die Absorption der Probe korrigiert.
+        \item 1 µl der Probe messen. Deckel langsam schließen, die Oberfläche nach der Messung reinigen.
+        \item Bei Bedarf die Lösung 2x messen.
+    \end{itemize}
+    \item Konzentration wird unter >RUN< und in den >Reports< angezeigt. Konzentration und den OD-Wert der Probe notieren.
+    \item Überprüfung der Grafik >GRAPH< und der Verhältnisse von 260/230 nm und 260/280 nm.
+\end{enumerate}
+
+\section*{Part 1: Reverse Transkription – cDNA Synthese aus der isolierten RNA}
+
+\subsection*{Material}
+
+\begin{itemize}
+    \item M-MuLV Reverse Transcriptase New England Biolabs (NEB)
+    \begin{itemize}
+        \item Enzyme (Konz.: 200.000 units/ml)
+        \item Reaction Buffer (Konz.: 10X)
+    \end{itemize}
+    \item Random Primer Mix New England Biolabs (NEB) (Konz.: 60 µM)
+    \item RNase Inhibitor, Murine New England Biolabs (NEB) (Konz.: 40.000 units/ml)
+    \item dNTPs (Konz.: 10 mM)
+    \item Nuclease-free H\textsubscript{2}O
+    \item Heizblock TS pro – CellMedia
+    \item Mikrozentrifugenröhrchen (Eppi/Tube) 1.5 ml
+    \item Pipetten 0.5 -10 µl, 10 – 100 µl
+    \item Pipettenspitzen 0.5 -10 µl, 20 – 100 µl
+    \item Mini-Tischzentrifuge Heathrow Scientific – Biozym
+    \item Rack
+    \item Box mit Eis
+\end{itemize}
+
+\subsection*{Zusätzliche Information des Herstellers}
+
+Moloney Murine Leukemia Virus (M-MuLV) Reverse Transkriptase ist eine RNA-abhängige DNA-Polymerase. Dieses Enzym kann ausgehend von einem Primer einen komplementären DNA-Strang synthetisieren, wobei entweder RNA (cDNA Synthese) oder einzelsträngige DNA als Vorlage verwendet wird. Der M-MuLV- Reverse-Transkriptase fehlt die 3‘→ 5‘ – Exonuklease-Aktivität. Das Gen, das für die M-MuLV Reverse Transkriptase kodiert, wird in E. coli in einem Vektor exprimiert, der 16 zusätzliche Aminosäuren am N-Terminus und 13 Aminosäuren am C-Terminus enthält. Dieses Konstrukt führt zu einem voll funktionsfähigen Reverse-Transkriptase-Protein mit einer funktionsfähigen RNase-H-Domäne.
+
+\subsection*{Vorbereitungen}
+
+\begin{enumerate}
+    \item Heizblock auf 25 °C stellen, mit einer Zeit von 5 min, nicht schütteln.
+    \item Puffer, dNTPs, Random Primer Mix und RNA auf Eis auftauen (Komponenten siehe Tabelle 1). RNase Inhibitor und die M-MuLV Reverse Transkriptase bis zur Benutzung weiterhin auf -20 °C lagern.
+\end{enumerate}
+
+\subsection*{Durchführung}
+
+\begin{enumerate}
+    \item Die Tabelle 1 zeigt die Bestandteile sowie die Volumina der einzelnen Komponenten für die RT-PCR (cDNA Synthese).
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{Komponenten} & \textbf{Volumen} \\ \hline
+            Nukleasefreies H\textsubscript{2}O & to a total Volume of 20 µl = \_\_\_\_\_\_\_\_\_\_\_\_ µl \\ \hline
+            Random Primer Mix (60 µM) & 2 µl \\ \hline
+            10X M-MuLV RT Puffer & 2 µl \\ \hline
+            10 mM dNTP & 1 µl \\ \hline
+            RNAse Inhibitor (40 U/µl) & 0,2 µl \\ \hline
+            M-MuLV Reverse Transkriptase (200 U/µl) & 1 µl \\ \hline
+            0,5 µg RNA & X µl = \_\_\_\_\_\_\_\_\_\_ µl \\ \hline
+        \end{tabular}
+        \caption{Komponenten und Zusammensetzung der RT-PCR}
+    \end{table}
+
+    \item Berechnen Sie das notwendige Volumen der RNA (0,5 µg RNA/Tube) und des nukleasefreien H\textsubscript{2}O.
+    \begin{itemize}
+        \item Beispiel: Gemessene RNA-Konzentration: 260 ng/µl
+        \[
+        \frac{500 \text{ ng}}{260 \text{ ng/µl}} = \frac{x \text{ µl}}{1 \text{ µl}}
+        \]
+        \[
+        x \text{ µl} = \frac{500 \text{ ng} \times 1 \text{ µl}}{260 \text{ ng/µl}} = 1,9 \text{ µl RNA pro Reaktion}
+        \]
+    \end{itemize}
+
+    \item 1 Eppi beschriften und auf Eis stellen.
+    \item Alle Komponenten (Reihenfolge siehe Tabelle 1) in das vorbereitete Eppi pipettieren.
+    \item Eppis verschließen. Kurz mittels Mini-Tischzentrifuge abzentrifugieren, wenn Blasen im Tube vorhanden sind.
+    \item Im Heizblock folgende Inkubationsschritte durchführen:
+    \begin{itemize}
+        \item 5 min bei 25 °C
+        \item 60 min bei 42 °C
+        \item 20 min bei 65 °C
+    \end{itemize}
+
+    
+\end{enumerate}
+
+\end{document}

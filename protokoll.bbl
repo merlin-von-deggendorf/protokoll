@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{NCBIGene2597_products}
+{National Center for Biotechnology Information}.
+\newblock Genes for homo sapiens (human) - ncbi.
+\newblock \url{https://www.ncbi.nlm.nih.gov/datasets/gene/id/2597/products/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem{NCBIGene2597}
+{National Center for Biotechnology Information}.
+\newblock Gene: Gapdh glyceraldehyde-3-phosphate dehydrogenase.
+\newblock \url{https://www.ncbi.nlm.nih.gov/gene/2597/#reference-sequences},
+  2024.
+\newblock Accessed: 2024-06-25.
+
+\bibitem{ThermoFisher260280}
+Thermo~Fisher Scientific.
+\newblock Interpretation of nucleic acid 260/280 ratios.
+\newblock
+  \url{https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/T123-NanoDrop-Lite-Interpretation-of-Nucleic-Acid-260-280-Ratios.pdf},
+  2024.
+\newblock Accessed: 2024-06-25.
+
+\bibitem{ThermoFisherQuantitatingRNA}
+Thermo~Fisher Scientific.
+\newblock Quantitating rna.
+\newblock
+  \url{https://www.thermofisher.com/us/en/home/references/ambion-tech-support/rna-isolation/tech-notes/quantitating-rna.html},
+  2024.
+\newblock Accessed: 2024-06-25.
+
+\end{thebibliography}
