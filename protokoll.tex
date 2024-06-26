@@ -15,6 +15,10 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{longtable}
+
 \geometry{
     left=0.25in,
     right=0.25in,
@@ -79,14 +83,14 @@ Die RNA wird aus zwei unterschidllichen Zelllinien isoliert und anschließend mi
 
 \subsection{RNA-Isolation mittels Monarch\textsuperscript{\textregistered} Total RNA Miniprep Kit (NEB)}
 
-\begin{enumerate}
+\begin{itemize}
     \item Lysat erstellen
     \item gDNA entfernen
     \item RNA isolieren und Nebenprodukte entfernen, unter Nutzung
     von Ethanolpräzipitation, um die Haftung der RNA zu erleichtern.
     \item DNase 1 zerstört Reste der DNA
     \item Elution RNA in nukleasefreiem Wasser
-\end{enumerate}
+\end{itemize}
 
 \subsubsection*{RNA-Isolation}
 In diesem Versuch wurde die RNA aus kultivierten
@@ -345,8 +349,87 @@ Die Reinheit der RNA wird durch die 260/280- und 260/230-Verhältnisse bestimmt.
 
 Die meisten Proben zeigen 260/280- und 260/230-Verhältnisse, die nahe oder im idealen Bereich liegen, was auf eine hohe Reinheit der isolierten RNA hinweist. Einige leichte Abweichungen beim 260/230-Verhältnis könnten auf minimale Verunreinigungen hinweisen, die jedoch die Gesamtqualität der RNA nicht signifikant beeinträchtigen sollten.
 
-\subsection*{PCR-Ergebnisse}
+\subsection*{Gel-Elektrophorese}
 
+Die Auswertung der Gel-Elektrophorese zeigt die Größe der PCR-Produkte der GAPDH- und Beta-Actin-Proben. Die Banden der PCR-Produkte werden mit einer DNA-Standardleiter verglichen, um die Größe der Amplifikate zu bestimmen. Die Bandenintensität gibt Aufschluss über die Menge des Amplifikats. 
+
+
+\begin{longtable}{|c|c|c|c|c|c|}
+    \hline
+    \textbf{Lane} & \textbf{Band} & \textbf{Volume} & \textbf{Base Pairs (BP)} & \textbf{Zelllinie} & \textbf{Gen} \\
+    \hline
+    \endfirsthead
+    \multicolumn{6}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+    \hline
+    \textbf{Lane} & \textbf{Band} & \textbf{Volume} & \textbf{Base Pairs (BP)} & \textbf{Zelllinie} & \textbf{Gen} \\
+    \hline
+    \endhead
+    \hline \multicolumn{6}{|r|}{{Continued on next page}} \\ \hline
+    \endfoot
+    \hline
+    \endlastfoot
+    
+    2 & 1 & 191325.48 & 200 & HEK293T & GAPDH\_1 \\
+    \hline
+    3 & 1 & 303756.77 & 194 & HEK293T & GAPDH\_1 \\
+    \hline
+    5 & 1 & 360547.50 & 264 & HEK293T & GAPDH\_2 \\
+    \hline
+    6 & 1 & 337464.61 & 270 & HEK293T & GAPDH\_2 \\
+    \hline
+    13 & 1 & 76446.84 & 186 & A375 & GAPDH\_1 \\
+    \hline
+    14 & 1 & 48044.41 & 181 & A375 & GAPDH\_1 \\
+    \hline
+    15 & 1 & 163074.30 & 165 & A375 & GAPDH\_1 \\
+    \hline
+    18 & 1 & 91246.00 & 379 & A375 & GAPDH\_2 \\
+    18 & 2 & 176074.94 & 240 & A375 & GAPDH\_2 \\
+    \hline
+    19 & 1 & 124744.67 & 383 & A375 & GAPDH\_2 \\
+    19 & 2 & 6812.80 & 238 & A375 & GAPDH\_2 \\
+    19 & 3 & 139857.73 & 68 & A375 & GAPDH\_2 \\
+    \hline
+    21 & 1 & 44789.33 & 559 & A375 & beta-Actin \\
+    21 & 2 & 388194.00 & 329 & A375 & beta-Actin \\
+    \hline
+    22 & 1 & 81981.33 & 344 & A375 & beta-Actin \\
+    22 & 2 & 122827.16 & 71 & A375 & beta-Actin \\
+    \hline
+    
+    \caption{Summary of Gel Electrophoresis Analysis with Lane, Band, Volume, Base Pairs, Zelllinie, and Gen}
+    \label{table:gel_analysis_detailed}
+    \end{longtable}
+    
+    
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Band No & Base Pairs & Calib Vol(ug) \\ \hline
+    1 & 5000.000 & 134.12 \\ \hline
+    2 & 4000.000 & 57.78 \\ \hline
+    3 & 3000.000 & 101.87 \\ \hline
+    4 & 2500.000 & 67.59 \\ \hline
+    5 & 2000.000 & 49.40 \\ \hline
+    6 & 1500.000 & 57.56 \\ \hline
+    7 & 1000.000 & 68.32 \\ \hline
+    8 & 900.000 & 80.24 \\ \hline
+    9 & 800.000 & 156.12 \\ \hline
+    10 & 700.000 & 110.37 \\ \hline
+    11 & 600.000 & 106.42 \\ \hline
+    12 & 500.000 & 134.47 \\ \hline
+    13 & 400.000 & 77.76 \\ \hline
+    14 & 300.000 & 34.73 \\ \hline
+    15 & 200.000 & 20.93 \\ \hline
+    16 & 150.000 & 8.85 \\ \hline
+    17 & 100.000 & 1.37 \\ \hline
+    \end{tabular}
+    \caption{Ladder Data}
+    \label{table:laddertable}
+    \end{table}
+    
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/gel/a375bp.png}
@@ -368,6 +451,34 @@ Die meisten Proben zeigen 260/280- und 260/230-Verhältnisse, die nahe oder im i
     \label{fig:gapdh}
 \end{figure}
 \subsection*{qPCR-Ergebnisse}
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/cycler/G1_2_G2.png}
+        \subcaption{Image 1}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/cycler/g1_and_g2.png}
+        \subcaption{Image 2}
+    \end{minipage}
+    
+    \vspace{0.5cm}
+    
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/cycler/mc2.png}
+        \subcaption{Image 3}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/cycler/meltingcurves.png}
+        \subcaption{Image 4}
+    \end{minipage}
+    \caption{Four images arranged in a 2x2 grid.}
+    \label{fig:2x2images}
+\end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/cycler/G1_2_G2.png}
@@ -383,7 +494,7 @@ Die meisten Proben zeigen 260/280- und 260/230-Verhältnisse, die nahe oder im i
 % Diskussion
 \section{Diskussion}
 
-
+Die Quantifizierung der RNA erfolgte relativ im Verhältnis zu beta-Actin. Wobei davon ausgegangen wurde, dass die beta-Actin mRNA in allen Zelllinien in gleicher Menge vorhanden ist. Jede Probe wurde in zwei technischen Replikaten analysiert. Die Auswertung der Ampifikationskurven mithilfe der LightCycler96 Software ergab, dass etwa die 
 
 % Literaturverzeichnis
 \bibliographystyle{plain}
