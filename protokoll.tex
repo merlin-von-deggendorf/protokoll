@@ -446,7 +446,7 @@ Die Auswertung der Gel-Elektrophorese zeigt die Größe der PCR-Produkte der GAP
 \subsection*{High Resolution Melting (HRM) Analyse}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/cycler/mc2.png}
+    \includegraphics[width=\textwidth]{images/cycler/bactinmelting.png}
     \caption{Schmelzkurven der GAPDH-Proben}
     \label{fig:gapdh}
 \end{figure}
@@ -468,7 +468,7 @@ Die Auswertung der Gel-Elektrophorese zeigt die Größe der PCR-Produkte der GAP
     
     \begin{minipage}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/cycler/mc2.png}
+        \includegraphics[width=\textwidth]{images/cycler/bactinmelting.png}
         \subcaption{Image 3}
     \end{minipage}
     \begin{minipage}[b]{0.45\textwidth}
@@ -491,10 +491,101 @@ Die Auswertung der Gel-Elektrophorese zeigt die Größe der PCR-Produkte der GAP
     \caption{Verhältnisse der Amplifikationen der GAPDH-Proben zu Beta-Actin}
     \label{fig:gapdh2beta}
 \end{figure}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    Gene & Cell Line & Max Temperature \\
+    \hline
+    GAPDH\_2 & A375 & 88.2369276724924 \\
+    \hline
+    GAPDH\_2 & A375 & 88.2369276724924 \\
+    \hline
+    GAPDH\_2 & Sk Mel 28 & 87.9079894404074 \\
+    \hline
+    GAPDH\_2 & HEK293T & 87.9737770868244 \\
+    \hline
+    GAPDH\_2 & MEWO & 87.9737770868244 \\
+    \hline
+    GAPDH\_2 & Sk Mel 28 & 87.7764141475733 \\
+    \hline
+    GAPDH\_2 & HEK293T & 87.6448388547393 \\
+    \hline
+    GAPDH\_1 & HEK293T & 84.0634157385831 \\
+    \hline
+    GAPDH\_1 & MEWO & 83.7362744888823 \\
+    \hline
+    GAPDH\_1 & Sk Mel 28 & 84.1288439885233 \\
+    \hline
+    GAPDH\_1 & HEK293T & 84.1288439885233 \\
+    \hline
+    GAPDH\_1 & MEWO & 84.0634157385831 \\
+    \hline
+    GAPDH\_1 & Sk Mel 28 & 83.8017027388225 \\
+    \hline
+    GAPDH\_1 & HEK293T & 84.0634157385831 \\
+    \hline
+    GAPDH\_1 & Sk Mel 28 & 83.7362744888823 \\
+    \hline
+    GAPDH\_1 & A375 & 84.3251287383437 \\
+    \hline
+    GAPDH\_1 & A375 & 84.3905569882839 \\
+    \hline
+    GAPDH\_1 & A375 & 84.3251287383437 \\
+    \hline
+    b\_actin & MEWO & 88.0846082426742 \\
+    \hline
+    b\_actin & Sk Mel 28 & 88.0189293594156 \\
+    \hline
+    b\_actin & MEWO & 88.0846082426742 \\
+    \hline
+    b\_actin & Sk Mel 28 & 88.0189293594156 \\
+    \hline
+    b\_actin & A375 & 88.8070759585186 \\
+    \hline
+    b\_actin & A375 & 88.6100393087428 \\
+    \hline
+    \end{tabular}
+
+
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Gene & Average & Standard Deviation \\
+        \hline
+        GAPDH\_2 & 87.96437885162194 & 0.2196052057817102 \\
+        \hline
+        GAPDH\_1 & 84.06936376130494 & 0.23123966302554017 \\
+        \hline
+        b\_actin & 88.27069841190684 & 0.34608887024272494 \\
+        \hline
+        \end{tabular}
+
+
 % Diskussion
 \section{Diskussion}
 
-Die Quantifizierung der RNA erfolgte relativ im Verhältnis zu beta-Actin. Wobei davon ausgegangen wurde, dass die beta-Actin mRNA in allen Zelllinien in gleicher Menge vorhanden ist. Jede Probe wurde in zwei technischen Replikaten analysiert. Die Auswertung der Ampifikationskurven mithilfe der LightCycler96 Software ergab, dass etwa die 
+Die Quantifizierung der RNA erfolgte relativ im Verhältnis zu beta-Actin. Wobei davon ausgegangen wurde, dass die beta-Actin mRNA in allen Zelllinien in gleicher Menge vorhanden ist. Jede Probe wurde in zwei technischen Replikaten analysiert. Die Auswertung der Ampifikationskurven mithilfe der LightCycler96 Software ergab:
+% Tabelle mit den Ergebnissen der relativen Quantifizierung:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c|c |c|c } 
+      \hline
+      Zelllinie & GAPDH (Primer 1) & GAPDH (Primer 2) & GAPDH (Primer 1)  \\ 
+      & beta Actin & beta Actin & GAPDH (Primer 2)  \\ 
+      \hline
+      A375 & Row 1, Col 2 & Row 1, Col 3& \\ 
+      \hline
+      MEWO & Row 2, Col 2 & Row 2, Col 3& \\ 
+      \hline
+      SKM & Row 3, Col 2 & Row 3, Col 3& \\ 
+      \hline
+      
+      HEK293T & Row 3, Col 2 & Row 3, Col 3& \\ 
+      \hline
+    \end{tabular}
+    \caption{Sample Table}
+    \label{table:1}
+    \end{table}
 
 % Literaturverzeichnis
 \bibliographystyle{plain}
